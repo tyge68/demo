@@ -3,7 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.adobe.locust</groupId>
-  <artifactId>demo</artifactId>
+  <artifactId>locust-clusters-proxy-cli</artifactId>
+  <description>This CLI tool aimed to be used as a proxy that aggregate multiple locust manager+workers running in different isolated clusters</description>
   <version>0.1</version>
   <packaging>${packaging}</packaging>
 
@@ -19,7 +20,7 @@
     <release.version>11</release.version>
     <micronaut.version>3.8.7</micronaut.version>
     <micronaut.runtime>netty</micronaut.runtime>
-    <exec.mainClass>com.adobe.locust.Application</exec.mainClass>
+    <exec.mainClass>com.adobe.locust.impl.Application</exec.mainClass>
   </properties>
 
   <repositories>
@@ -69,6 +70,15 @@
       <groupId>jakarta.annotation</groupId>
       <artifactId>jakarta.annotation-api</artifactId>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.picocli</groupId>
+      <artifactId>micronaut-picocli</artifactId>
+      <version>4.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>

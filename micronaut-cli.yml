@@ -3,4 +3,4 @@ defaultPackage: com.adobe.locust
 testFramework: junit
 sourceLanguage: java
 buildTool: maven
-features: [annotation-api, app-name, awaitility, graalvm, http-client, jackson-databind, java, java-application, junit, maven, mockito, netty-server, openapi, readme, shade, slf4j-simple, swagger-ui, toml, toml-build]
+features: [annotation-api, app-name, awaitility, graalvm, http-client, jackson-databind, java, java-application, junit, maven, mockito, netty-server, openapi, readme, shade, slf4j-simple, swagger-ui, toml, toml-build, picocli]

@@ -1,4 +1,4 @@
-micronaut.application.name = 'demo'
+micronaut.application.name = 'locust-cluster-proxy-cli'
 netty.default.allocator.max-order = 3
 
 [micronaut.router.static-resources.swagger]
